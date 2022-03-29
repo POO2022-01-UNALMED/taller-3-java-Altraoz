@@ -9,12 +9,13 @@ public class TV {
     private Control control;
     private static int numTV;
 
-    TV(Marca marca, Boolean estado){
+    public TV(Marca marca, Boolean estado){
         this.marca = marca;
         this.estado = estado;
         canal = 1;
         volumen = 1;
         precio = 500;
+        numTV++;
     }
 
     //metodos get y set
@@ -36,4 +37,10 @@ public class TV {
     public static void setNumTV(int numTV){TV.numTV = numTV;}
 
 
+    //TV CONTROL
+    public void canalUp(){if (this.canal<120 && this.getEstado()){setCanal(this.canal++);}}
+    public void canalDown(){if (this.canal>1){setCanal(this.canal--);}}
+
+    public void volumenUp(){if(this.getVolumen()<7 && this.getEstado()) {setVolumen(this.volumen++);}}
+    public void volumenDown(){if(this.getVolumen()>0 && this.getEstado()){setVolumen(this.volumen--);}}
 }
