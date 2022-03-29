@@ -2,6 +2,7 @@ package taller3.televisores;
 
 public class TestTV {
 	public static void main(String[] args) {
+		
 		Marca marca1 = new Marca("Semsung");
 	    Marca marca2 = new Marca("Lj");
 		
@@ -25,5 +26,6 @@ public class TestTV {
 	    System.out.println(tv1.getPrecio());
 	    System.out.println(tv1.getMarca().getNombre());
 	    System.out.println(tv1.getCanal());
+
 	}
 }

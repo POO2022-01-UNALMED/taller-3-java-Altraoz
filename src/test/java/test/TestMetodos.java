@@ -20,6 +20,8 @@ public class TestMetodos {
 	
 	@Test
    	public void testMetodoCanal(){
+
+
 		
 		Marca marca =  new Marca("Semsung");
 		TV tv1 =  new TV(marca, true);
