@@ -45,4 +45,16 @@ public class TV {
 
     public void volumenUp(){setVolumen(this.volumen+1);}
     public void volumenDown(){setVolumen(this.volumen-1);}
+
+    @Override
+    public String toString() {
+        return "TV{" +
+                "marca=" + marca +
+                ", canal=" + canal +
+                ", precio=" + precio +
+                ", estado=" + estado +
+                ", volumen=" + volumen +
+                ", control=" + control +
+                '}';
+    }
 }
